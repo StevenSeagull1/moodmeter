@@ -13,8 +13,11 @@ class MoodModel extends Model
     public function getMood()
     {
         $user = auth()->user();
-     
-        $result = $this->where(['user' => $user->id])->find();
-        return  $result;
+        $db = db_connect();
+        $sql = "SELECT * FROM `mood` ORDER BY datum ASC;";
+
+        $selection =$db->query($sql);
+
+        return $selection->getResult();
     }
 }
