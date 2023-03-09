@@ -18,15 +18,19 @@
     0% {
         background-color: #45a3e5
     }
+
     30% {
         background-color: #66bf39
     }
+
     60% {
         background-color: #eb670f
     }
+
     90% {
         background-color: #f35
     }
+
     100% {
         background-color: #864cbf
     }
@@ -55,16 +59,14 @@ body {
     </style>
 </head>
 <h2>uw mood</h2><canvas id="myCanvas" width="175" height="150" style="border:1px solid #d3d3d3;">
-<<<<<<< HEAD
 Your browser he does not support the HTML5 canvas tag.</canvas>
-=======
-Your browser does not support the HTML5 canesfsefvas tag.</canvas>
->>>>>>> 1ca0d7a64456bd25cd7c8fbad7d54d98e3f8f702
-
+ 
 <?php if (! empty($mood) && is_array($mood)): ?>
 
     <?php for ($id = 0; $id < count($mood); $id++): ?>
+
     <div class='mood'>
+
     <div class="main">
         <h3> u was <?= esc($mood[$id]->mood) ?> </h3>
         <?php 
@@ -83,10 +85,12 @@ Your browser does not support the HTML5 canesfsefvas tag.</canvas>
     </div>
     
     <h3> op <?= esc($mood[$id]->plek) ?></h3>
+
         <h3><?= esc($mood[$id]->datum) ?></h3>
+
        
         
-        <img height="200px" width="150px" src='<?php "http://".$_SERVER['HTTP_HOST']?>/images/<?php echo ($mood_item['mood']);?>.jpg'>
+        <img height="200px" width="150px" src='<?php "http://".$_SERVER['HTTP_HOST']?>/images/<?php echo ($mood[$id]->mood);?>.jpg'>
         
     </div>
     <?php endfor ?>
@@ -102,6 +106,9 @@ ctx.lineTo(100,75);
 ctx.stroke();
 </script>
 <?php else: ?>
+
     <h3>No Mood</h3>
+
     <p>Unable to find any mood for you.</p>
+
 <?php endif ?>
