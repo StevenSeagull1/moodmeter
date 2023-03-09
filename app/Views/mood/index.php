@@ -97,6 +97,6 @@ ctx.stroke();
 
     <h3>No Mood</h3>
 
-    <p>Unable to find any mood for you.</p>
+    <p>Unable to 0000000 find any mood for you.</p>
 
 <?php endif ?>
