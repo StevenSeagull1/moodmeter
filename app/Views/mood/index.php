@@ -90,13 +90,13 @@ ctx.beginPath();
 ctx.arc(100, 75, 50, 0, .25* Math.PI);
 ctx.lineTo(100,75);
 ctx.arc(100, 75, 50, 0, -.25* Math.PI);
-ctx.lineTo(100,75);
+ctx.lineTo(100,75);tytgtrgtrgtrgtr
 ctx.stroke();
 </script>
 <?php else: ?>
 
     <h3>No Mood</h3>
 
-    <p>Unable to find any mood for you.</p>
+    <p>Unable to 0000000 find any mood for you.</p>
 
 <?php endif ?>
