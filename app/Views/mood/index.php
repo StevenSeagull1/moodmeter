@@ -62,7 +62,7 @@ body {
 Your browser does not support the HTML5 canvas tag.</canvas>
  
 <?php if (! empty($mood) && is_array($mood)): ?>
-
+<!-- ja -->
     <?php foreach ($mood as $mood_item): ?>
 
     <div class='mood'>
