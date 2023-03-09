@@ -5,7 +5,7 @@
         border:1px solid white;
         display:inline-grid;
         width:33%;
-        background-image: url("<?php "http://".$_SERVER['HTTP_HOST']?>/images/background.jpg"); 
+        background-image: url("<?php "http://".$_SERVER['HTTP_HOST']?>///images/background.jpg"); 
      background-size: cover;
     }
     h3{
