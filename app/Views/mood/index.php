@@ -5,7 +5,7 @@
         border:1px solid white;
         display:inline-grid;
         width:33%;
-        background-image: url("<?php "http://".$_SERVER['HTTP_HOST']?>///images/background.jpg"); 
+        background-image: url("<?php "http://".$_SERVER['HTTP_HOST']?>///llimages/background.jpg"); 
      background-size: cover;
     }
     h3{
@@ -68,13 +68,16 @@ Your browser does not support the HTML5 canvas tag.</canvas>
     <div class='mood'>
         <h3><?= esc($mood_item['user']) ?></h3>
 
+    <div class="main">
+        <h3> u was <?= esc($mood_item['mood']) ?> </h3>
+    </div>
+    
+    <h3> op <?= esc($mood_item['plek']) ?></h3>
+
         <h3><?= esc($mood_item['datum']) ?></h3>
 
-        <h3><?= esc($mood_item['plek']) ?></h3>
-
-        <div class="main">
-          <p>  <?= esc($mood_item['mood']) ?> </p>
-        </div>
+       
+        
         <img height="200px" width="150px" src='<?php "http://".$_SERVER['HTTP_HOST']?>/images/<?php echo ($mood_item['mood']);?>.jpg'>
         
     </div>
