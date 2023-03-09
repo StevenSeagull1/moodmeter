@@ -12,8 +12,14 @@ class MoodController extends BaseController
     {
         $model = model(MoodModel::class);
 
-        $data['mood'] = $model->getMood();
-        return view('mood/index', $data); 
+        $data = [
+            'mood'  => $model->getMood(),
+            'title' => 'Jou moods',
+        ];
+
+        return view('templates/header', $data)
+            . view('mood/index')
+            . view('templates/footer'); 
       
     }
 
