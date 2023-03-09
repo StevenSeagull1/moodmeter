@@ -90,7 +90,7 @@ Your browser does not support the HTML5 canesfsefvas tag.</canvas>
 
        
         
-        <img height="200px" width="150px" src='<?php "http://".$_SERVER['HTTP_HOST']?>/images/<?php echo ($mood_item['mood']);?>.jpg'>
+        <img height="200px" width="150px" src='<?php "http://".$_SERVER['HTTP_HOST']?>/images/<?php echo ($mood[$id]->mood);?>.jpg'>
         
     </div>
     <?php endfor ?>
