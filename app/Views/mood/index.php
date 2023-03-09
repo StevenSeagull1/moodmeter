@@ -90,7 +90,7 @@ ctx.beginPath();
 ctx.arc(100, 75, 50, 0, .25* Math.PI);
 ctx.lineTo(100,75);
 ctx.arc(100, 75, 50, 0, -.25* Math.PI);
-ctx.lineTo(100,75);
+ctx.lineTo(100,75);tytgtrgtrgtrgtr
 ctx.stroke();
 </script>
 <?php else: ?>
