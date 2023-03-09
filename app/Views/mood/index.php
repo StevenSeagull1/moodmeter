@@ -59,7 +59,7 @@ body {
     </style>
 </head>
 <h2>uw mood</h2><canvas id="myCanvas" width="175" height="150" style="border:1px solid #d3d3d3;">
-Your browser does not support the HTML5 canvas tag.</canvas>
+Your browser does not support the HTML5 canesfsefvas tag.</canvas>
  
 <?php if (! empty($mood) && is_array($mood)): ?>
 
